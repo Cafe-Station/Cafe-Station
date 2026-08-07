@@ -1,1 +1,210 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frischer Kaffee, Getränke und Snacks am Willy-Brandt-Platz 25 in Reutlingen.">
+    <meta name="theme-color" content="#140a06">
+    <title>Café Station Reutlingen | Kaffee direkt am Bahnhof</title>
+    <link rel="icon" href="./images/cafe-station-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&amp;family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header class="site-header" aria-label="Hauptnavigation">
+        <a class="brand" href="#top" aria-label="Café Station Startseite">
+          <img src="./images/cafe-station-logo.png" alt="">
+          <span>Café Station<small>Reutlingen</small></span>
+        </a>
+        <nav>
+          <a href="#kaffee">Kaffee</a>
+          <a href="#station">Station</a>
+          <a href="#besuch">Besuch</a>
+        </nav>
+        <a class="header-cta" href="tel:0171217538985">Anrufen</a>
+      </header>
 
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <img class="hero-photo" src="./images/cafe-station-aussen-abend.webp" alt="Café Station am Willy-Brandt-Platz in Reutlingen am Abend">
+        <div class="hero-shade"></div>
+        <div class="hero-grain"></div>
+        <div class="hero-content">
+          <p class="eyebrow"><span></span> Direkt am Bahnhof Reutlingen</p>
+          <h1 id="hero-title">Dein Kaffee.<em>Deine Station.</em></h1>
+          <p class="hero-copy">Frisch, unkompliziert und genau dann da, wenn du ihn brauchst – montags bis freitags schon ab 06:00 Uhr.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#kaffee">Kaffee entdecken <span aria-hidden="true">↘</span></a>
+            <a class="button button-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Caf%C3%A9+Station+Willy-Brandt-Platz+25+72764+Reutlingen" target="_blank" rel="noreferrer">Route öffnen</a>
+          </div>
+        </div>
+        <div class="hero-meta" aria-label="Kurzinformationen">
+          <span>Willy-Brandt-Platz 25</span>
+          <span>72764 Reutlingen</span>
+          <span>Mo–Fr · 06–21 Uhr</span>
+        </div>
+        <a class="scroll-cue" href="#kaffee" aria-label="Zum Kaffee-Erlebnis scrollen"><span>Scroll</span><i></i></a>
+      </section>
+
+      <section class="coffee-intro" id="kaffee">
+        <p class="section-index">01 / UNSER KAFFEE</p>
+        <div>
+          <h2>Vom ersten Duft<br>bis zum letzten Schluck.</h2>
+          <p>Kaffee ist bei uns kein Nebendarsteller. Er ist der Moment zwischen Ankommen und Weiterfahren – heiß, frisch und ohne Umwege.</p>
+        </div>
+      </section>
+
+      <section class="coffee-story" aria-label="Der Weg unseres Kaffees">
+        <div class="story-sticky">
+          <div class="story-copy" aria-live="polite">
+            <article data-story-copy="beans"><span>01</span><p>Frisch gemahlen</p><h3>Die Bohne<br>macht den Anfang.</h3></article>
+            <article data-story-copy="pressure"><span>02</span><p>9 Bar Druck</p><h3>Präzision,<br>die man schmeckt.</h3></article>
+            <article data-story-copy="crema"><span>03</span><p>Perfekte Crema</p><h3>Heiß. Samtig.<br>Bereit für dich.</h3></article>
+          </div>
+
+          <div class="coffee-stage" aria-hidden="true">
+            <img class="stage-watermark" src="./images/cafe-station-logo.png" alt="" draggable="false">
+            <div class="machine-halo"></div>
+            <div class="espresso-machine" data-machine>
+              <div class="machine-hopper"><i></i></div>
+              <div class="machine-panel">
+                <div class="pressure-gauge">
+                  <div class="gauge-scale"></div>
+                  <i class="gauge-needle" data-gauge-needle></i>
+                  <b>9</b><span>BAR</span>
+                </div>
+                <div class="grinder-column"><span></span><i></i><b></b></div>
+                <div class="machine-status"><i></i><span></span><span></span></div>
+              </div>
+              <div class="brew-group"><i></i><span></span></div>
+            </div>
+
+            <div class="bean-origin" data-bean-origin></div>
+
+            <div class="portafilter-open" data-portafilter-open>
+              <img class="portafilter-open-image" src="./images/portafilter-realistic.webp" alt="" draggable="false">
+              <div class="portafilter-basket-fill"></div>
+              <img class="portafilter-open-rim" src="./images/portafilter-realistic.webp" alt="" draggable="false">
+            </div>
+
+            <div class="portafilter-locked" data-portafilter-locked>
+              <img src="./images/portafilter-locked-realistic-v2.webp" alt="" draggable="false">
+              <div class="espresso-jets">
+                <i class="espresso-jet jet-left" data-jet></i>
+                <i class="espresso-jet jet-right" data-jet></i>
+                <b class="espresso-drip drip-left" data-drip></b>
+                <b class="espresso-drip drip-right" data-drip></b>
+              </div>
+            </div>
+
+            <div class="glass-cup" data-cup>
+              <div class="glass-saucer"></div>
+              <div class="glass-handle"></div>
+              <div class="glass-body">
+                <div class="glass-liquid" data-cup-fill><i></i></div>
+                <img src="./images/cafe-station-logo.png" alt="" draggable="false">
+                <span class="glass-shine"></span>
+              </div>
+              <i class="glass-steam steam-one"></i>
+              <i class="glass-steam steam-two"></i>
+            </div>
+
+            <div class="story-chip chip-beans"><i></i><span><strong>Frisch gemahlen</strong><small>direkt für dich</small></span></div>
+            <div class="story-chip chip-crema"><i></i><span><strong>Perfekte Crema</strong><small>heiß &amp; samtig</small></span></div>
+            <div class="stage-floor"></div>
+          </div>
+          <p class="story-note"><i></i> Scrollen, um den Espresso zu starten.</p>
+        </div>
+      </section>
+
+      <section class="menu-section" aria-labelledby="menu-title">
+        <div class="menu-heading" data-reveal>
+          <p class="section-index">02 / DEINE AUSWAHL</p>
+          <h2 id="menu-title">Kaffee, wie du ihn magst.</h2>
+          <p>Für den schnellen Start, die kleine Pause oder den Weg zum nächsten Zug.</p>
+        </div>
+        <div class="coffee-grid">
+          <article class="coffee-card" data-reveal>
+            <div class="coffee-card-image"><img src="./images/menu-caffe-latte-v3.webp" alt="Caffè Latte bei Café Station"><span>Bestseller</span></div>
+            <div class="coffee-card-copy"><p class="coffee-kicker">Sanft &amp; cremig</p><div class="coffee-title-row"><h3>Caffè Latte</h3><a href="#besuch" aria-label="Caffè Latte vor Ort genießen">↗</a></div><p class="coffee-description">Kräftiger Espresso, heiße Milch und eine feine Schicht Milchschaum.</p></div>
+          </article>
+          <article class="coffee-card" data-reveal>
+            <div class="coffee-card-image"><img src="./images/menu-cappuccino-v3.webp" alt="Cappuccino bei Café Station"></div>
+            <div class="coffee-card-copy"><p class="coffee-kicker">Klassisch italienisch</p><div class="coffee-title-row"><h3>Cappuccino</h3><a href="#besuch" aria-label="Cappuccino vor Ort genießen">↗</a></div><p class="coffee-description">Espresso, samtige Milch und cremiger Milchschaum im perfekten Verhältnis.</p></div>
+          </article>
+          <article class="coffee-card" data-reveal>
+            <div class="coffee-card-image"><img src="./images/menu-iced-caramel-v3.webp" alt="Iced Caramel bei Café Station"><span>Eiskalt</span></div>
+            <div class="coffee-card-copy"><p class="coffee-kicker">Süß &amp; erfrischend</p><div class="coffee-title-row"><h3>Iced Caramel</h3><a href="#besuch" aria-label="Iced Caramel vor Ort genießen">↗</a></div><p class="coffee-description">Espresso, Eis, Milch und ein feiner Hauch von karamelliger Süße.</p></div>
+          </article>
+          <article class="coffee-card" data-reveal>
+            <div class="coffee-card-image"><img src="./images/menu-espresso-v3.webp" alt="Espresso bei Café Station"></div>
+            <div class="coffee-card-copy"><p class="coffee-kicker">Intensiv &amp; klar</p><div class="coffee-title-row"><h3>Espresso</h3><a href="#besuch" aria-label="Espresso vor Ort genießen">↗</a></div><p class="coffee-description">Vollmundig, nussig und mit einer dichten goldenen Crema.</p></div>
+          </article>
+        </div>
+        <p class="menu-footnote">Außerdem erhältlich: heiße Schokolade und weitere Heißgetränke.</p>
+      </section>
+
+      <section class="station-section" id="station">
+        <div class="station-image-wrap">
+          <img src="./images/cafe-station-aussen-tag.webp" alt="Café Station direkt am Reutlinger Bahnhof bei Tag">
+          <div class="station-badge"><strong>06:00</strong><span>Frühstart<br>Mo–Fr</span></div>
+        </div>
+        <div class="station-content">
+          <p class="section-index">03 / DIE STATION</p>
+          <h2>Mitten im Weg.<br>Genau richtig.</h2>
+          <p>Ob vor der Arbeit, zwischen zwei Verbindungen oder einfach auf eine Tasse zwischendurch: Du findest uns am Willy-Brandt-Platz 25 – direkt dort, wo Reutlingen ankommt und weiterfährt.</p>
+          <div class="fact-row"><div><span>Mo–Fr</span><strong>06–21 Uhr</strong></div><div><span>Sa–So</span><strong>14–21 Uhr</strong></div></div>
+          <a class="text-link" href="#besuch">Besuch planen <span>→</span></a>
+        </div>
+      </section>
+
+      <section class="inside-section" aria-label="Einblick in die Café Station">
+        <div class="inside-copy"><p class="section-index">04 / EIN BLICK REIN</p><h2>Klein in der Fläche.<br>Groß in der Auswahl.</h2></div>
+        <div class="inside-media">
+          <video src="./media/cafe-station-rundgang.mp4" poster="./images/cafe-station-innen.webp" autoplay muted loop playsinline controls aria-label="Kurzer Rundgang durch die Café Station"></video>
+          <span class="video-label">21 Sek. · Rundgang</span>
+        </div>
+      </section>
+
+      <section class="assortment-section">
+        <div class="assortment-photo"><img src="./images/cafe-station-sortiment.webp" alt="Innenraum der Café Station mit Getränken, Snacks und weiterem Sortiment"></div>
+        <div class="assortment-content">
+          <p class="section-index">05 / MEHR ALS KAFFEE</p><h2>Alles für unterwegs.</h2>
+          <div class="assortment-list">
+            <article><span>01</span><div><h3>Kalte Getränke</h3><p>Erfrischung für unterwegs – direkt aus der Kühlung.</p></div></article>
+            <article><span>02</span><div><h3>Snacks &amp; Süßes</h3><p>Kleine Stärkung, Gebäck und etwas für zwischendurch.</p></div></article>
+            <article><span>03</span><div><h3>Tabak &amp; E-Zigaretten</h3><p>Auswahl für Erwachsene. Verkauf ausschließlich ab 18 Jahren.</p></div><b>18+</b></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="visit-section" id="besuch">
+        <img src="./images/cafe-station-aussen-abend.webp" alt="" class="visit-background">
+        <div class="visit-overlay"></div>
+        <div class="visit-content">
+          <img src="./images/cafe-station-logo.png" alt="Café Station Logo">
+          <p class="eyebrow"><span></span> Dein nächster Kaffee wartet</p>
+          <h2>Bis gleich<br>an der Station.</h2>
+          <div class="visit-details">
+            <address><span>Adresse</span><strong>Willy-Brandt-Platz 25<br>72764 Reutlingen</strong></address>
+            <div><span>Öffnungszeiten</span><strong>Mo–Fr: 06–21 Uhr<br>Sa–So: 14–21 Uhr</strong></div>
+            <div><span>Telefon</span><a href="tel:0171217538985">0171 217 53 89 85</a></div>
+          </div>
+          <div class="visit-actions">
+            <a class="button button-gold" href="tel:0171217538985">Jetzt anrufen</a>
+            <a class="button button-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Caf%C3%A9+Station+Willy-Brandt-Platz+25+72764+Reutlingen" target="_blank" rel="noreferrer">Route öffnen</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-brand"><img src="./images/cafe-station-logo.png" alt=""><strong>Café Station</strong></div>
+        <p>Dein Kaffee am Willy-Brandt-Platz in Reutlingen.</p>
+        <a href="#top">Nach oben ↑</a>
+      </footer>
+    </main>
+  </body>
+</html>
