@@ -385,3 +385,30 @@ footer p { text-align: center; } footer > a { justify-self: end; color: var(--go
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
   .coffee-story { height: 140vh; }
 }
+/* Hintergrundbild und Überschrift korrigieren */
+.hero-photo {
+  z-index: 0;
+}
+
+.hero-shade,
+.hero-grain {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero h1 {
+  width: fit-content;
+  max-width: 100%;
+  padding: 14px 20px 18px;
+  background: rgba(12, 6, 4, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+@media (max-width: 680px) {
+  .hero h1 {
+    padding: 10px 13px 14px;
+  }
+}
